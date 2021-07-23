@@ -100,7 +100,7 @@ y - y coordinate
 
 # Layering shapes
 
-`<!DOCTYPE html>
+```<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -108,7 +108,7 @@ y - y coordinate
   </head>
   <body>
     <svg width="500" height="500">
-    
+
       <rect
         width="150"
         height="150"
@@ -140,4 +140,4 @@ y - y coordinate
       ></line>
     </svg>
   </body>
-</html>`
+</html>```
