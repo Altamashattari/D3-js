@@ -101,44 +101,52 @@ y - y coordinate
 
 # Layering shapes
 
-```<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>SVG Example</title>
-  </head>
-  <body>
-    <svg width="500" height="500">
+```
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <title>SVG Example</title>
+    </head>
+    <body>
+      <svg width="500" height="500">
 
-      <rect
-        width="150"
-        height="150"
-        fill="#F44336"
-        stroke="#8BC34A"
-        stroke-width="10"
-        x="25"
-        y="25"
-      ></rect>
+        <rect
+          width="150"
+          height="150"
+          fill="#F44336"
+          stroke="#8BC34A"
+          stroke-width="10"
+          x="25"
+          y="25"
+        ></rect>
 
-      <!-- Circle -->
-      <circle
-        r="100"
-        cx="250"
-        cy="150"
-        fill="#9C27B0"
-        stroke="#E91E63"
-        stroke-width="10"
-      ></circle>
+        <!-- Circle -->
+        <circle
+          r="100"
+          cx="250"
+          cy="150"
+          fill="#9C27B0"
+          stroke="#E91E63"
+          stroke-width="10"
+        ></circle>
 
-      <!-- Line -->
-      <line
-        x1="50"
-        y1="50"
-        x2="200"
-        y2="200"
-        stroke-width="10"
-        stroke="blue"
-      ></line>
-    </svg>
-  </body>
-</html>```
+        <!-- Line -->
+        <line
+          x1="50"
+          y1="50"
+          x2="200"
+          y2="200"
+          stroke-width="10"
+          stroke="blue"
+        ></line>
+      </svg>
+    </body>
+  </html>
+
+- All three shapes are now appearing on top of each other. Looking at the HTML and then looking at the output, you can see how this is all layered.
+- The rectangle is the first element in the document, so it will appear at the very back. The circle and line follow it. The way SVG works naturally is first come, first serve. If another shape is added and it collides with another element, then it’ll appear above it.
+
+- The only way to change the order of appearance is by moving the elements around in the document. This is one of the flaws of SVG. When you’re working with graphs and charts, the order of elements does matter.
+
+- You can not use something like the z-index property to change the order of appearance. You will have to manually check the order in your HTML to make sure certain elements appear above others.
