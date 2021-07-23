@@ -17,7 +17,7 @@ We are going to cover three shapes: rectangles, circles, and lines.
 - Rectangles are created using the <rect> element. We must add this element inside the <svg> element. The browser will not draw the shape unless it’s contained inside the <svg> element. This rule goes for the other shapes, too.
 
 
-- <svg width="500" height="500">
+- `<svg width="500" height="500">
     <rect 
         width="150" 
         height="150" 
@@ -28,7 +28,7 @@ We are going to cover three shapes: rectangles, circles, and lines.
         y="25"
     >
     </rect>
-</svg>
+</svg>`
 
 width - The width of the shape. Measurement in pixels.
 height - The height of the shape. Measurement in pixels.
@@ -54,7 +54,7 @@ y - y coordinate
 
 - To create a circle, you need to use the <circle> element.
 
- - <svg width="500" height="500">
+ - `<svg width="500" height="500">
       <!-- Circle -->
       <circle
         r="100"
@@ -64,7 +64,7 @@ y - y coordinate
         stroke="#E91E63"
         stroke-width="10"
       ></circle>
-    </svg>
+    </svg>`
 
 - This element will create a perfect circle for you. We will introduce three new attributes. The only property required is r which is short for radius. The radius is used to calculate the width and height of the circle. In our example, we’re setting the radius to 100, which will give the circle a width and height of 200.
 
@@ -76,7 +76,7 @@ y - y coordinate
 
 - To create a line, you use the <line> element. While lines are simple, the line element has quite a few properties we need to define. The first 4 are the coordinates.
 
-- <svg width="500" height="500">
+- `<svg width="500" height="500">
       <!-- Line -->
       <line
         x1="50"
@@ -86,7 +86,7 @@ y - y coordinate
         stroke-width="10"
         stroke="blue"
       ></line>
-  </svg>
+  </svg>`
 
 - Basically, you need to set the start and end coordinates. The first set of properties you need to set are the x1 and y1 properties. These will be used as the starting point for the line.
 
@@ -100,7 +100,7 @@ y - y coordinate
 
 # Layering shapes
 
-<!DOCTYPE html>
+`<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -140,4 +140,4 @@ y - y coordinate
       ></line>
     </svg>
   </body>
-</html>
+</html>`
