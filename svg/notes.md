@@ -17,7 +17,8 @@ We are going to cover three shapes: rectangles, circles, and lines.
 - Rectangles are created using the <rect> element. We must add this element inside the <svg> element. The browser will not draw the shape unless it’s contained inside the <svg> element. This rule goes for the other shapes, too.
 
 
-- `<svg width="500" height="500">
+- ```
+  <svg width="500" height="500">
     <rect 
         width="150" 
         height="150" 
@@ -28,7 +29,7 @@ We are going to cover three shapes: rectangles, circles, and lines.
         y="25"
     >
     </rect>
-</svg>`
+  </svg>```
 
 width - The width of the shape. Measurement in pixels.
 height - The height of the shape. Measurement in pixels.
@@ -54,7 +55,7 @@ y - y coordinate
 
 - To create a circle, you need to use the <circle> element.
 
- - `<svg width="500" height="500">
+ - ```<svg width="500" height="500">
       <!-- Circle -->
       <circle
         r="100"
@@ -64,7 +65,7 @@ y - y coordinate
         stroke="#E91E63"
         stroke-width="10"
       ></circle>
-    </svg>`
+    </svg>```
 
 - This element will create a perfect circle for you. We will introduce three new attributes. The only property required is r which is short for radius. The radius is used to calculate the width and height of the circle. In our example, we’re setting the radius to 100, which will give the circle a width and height of 200.
 
