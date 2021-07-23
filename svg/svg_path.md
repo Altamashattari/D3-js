@@ -15,12 +15,12 @@
 - Paths are built using coordinates and lines. You input the coordinates, and SVG will take care of connecting them all. It goes by the order you input them. The only difference is the command you have to input for each coordinate. Here’s how you would create a shape using the <path> element.
 
 
-- <path
+- ``<path
         d="M 100, 100 L 300, 150"
         fill="none"
         stroke="#000"
         stroke-width="10">
-    </path>
+    </path>``
 
 To begin inputting your coordinates, you have to create the d attribute, which is short for data. The value for the d attribute must be a list of commands and coordinates.
 
