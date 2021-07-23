@@ -108,7 +108,7 @@ y - y coordinate
   </head>
   <body>
     <svg width="500" height="500">
-      <!-- Rectangle -->
+    
       <rect
         width="150"
         height="150"
